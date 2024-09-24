@@ -1,1 +1,26 @@
+Ruby is a dynamic, reflective,object-oriented,general purpose programming language.
+It favours developers productivity over machine
 
+1.Print statement in ruby: use  puts, print
+             ex: puts("Hello)/ print("Hello")     o/p: Hello
+. Difference between Puts and print is Puts after giving o/p goes to the next line but, print after printing the output stays on the same line.
+
+2.Data Types:
+       1.String: my_string="Ruby"
+       2.Number, 3. Boolean : my_bool=true, 4. Nil, 5. Arrays,6.Hashes, 7.symbols
+   Ex:  number=25
+        name="HArsha"     o/p: 25                 
+        bool=true              HArsha
+        puts number            true
+        puts name
+        puts bool
+3.Arithmetic Operations:
+             addition(+),subtraction(-),multiplication(*),division(/,quotient),modulo division(%,remainder),exponential(**,power)
+        ex: a=7
+            b=2
+            puts a+b           O/P: 9
+            puts a-b                5
+            puts a*b                14
+            puts a/b                3
+            puts a%b                1
+            puts a**b               49
