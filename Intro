@@ -21,6 +21,6 @@ It favours developers productivity over machine
             puts a+b           O/P: 9
             puts a-b                5
             puts a*b                14
-            puts a/b                3
+            puts a/b                3    (7/2=3 if both the values are integer thn we get o/p as integer)
             puts a%b                1
             puts a**b               49
