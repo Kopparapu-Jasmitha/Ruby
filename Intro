@@ -54,5 +54,23 @@ Multiline String: can be used in two ways 1.puts %/string/    2. puts <<any stri
                   time_select     time_select                             time_select                  time_select
                   String/         String                                  String
 7. string_methods with bang:(!)
-    .If we use ! the original text is changed
+    .If we use ! the original text is modified
+           text="hello"           o/P:
+           puts text.upcase!           HELLo 
+           puts text                   HELLO(original text is changed because of !)
+
     
+8.strings as array: string="hello mine"     
+                    puts string[0]   o/p:h
+                    puts string[3,2]  o/p:lo
+                    puts string.split(" ")  o/p:hello
+                                                mine
+                    puts string.include?"hello"   o/p:true
+                    puts string.include?"hi"       o/p:false
+.gsub-replaces the value any where present in the string    puts string.gsub('e','i')   o/p: hillo mini
+.sub-replaces the only first value in the string   puts string.sub('e','i')     o/p: hillo mine
+9.Assignment operators: +=,-=,*=,/=
+  ex: a=100
+      b=10         o/p:110
+      puts a+=b        
+   
