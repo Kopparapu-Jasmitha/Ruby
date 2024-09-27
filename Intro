@@ -24,3 +24,35 @@ It favours developers productivity over machine
             puts a/b                3    (7/2=3 if both the values are integer thn we get o/p as integer)
             puts a%b                1
             puts a**b               49
+4.interpolation:
+    name="Raj"                 o/p:hello,Raj
+    puts "hello,#{name}"           hello,Raj!
+    puts "hello,"+name+"!"         hello,#{name}!
+    puts 'hello,#{name}!'
+5.casting-data type conversion
+    to_Integer-> to_i          ex:  puts 1.to_f           o/p:1.0
+    to_String-> to_s                puts 1.to_s               1
+    to_Float  -> to_f               puts 3.14.to_f            3.14               puts 100+ "20+1i".to_c           o/p:120+1i
+    to_Array-> to_a                 puts 3.14.to_s            3.14
+    to_Rational -> to_r             puts "999".to_i           999
+    to_Complex -> to_c              puts "999".to_f           999.0
+                                    puts "999".to_r           999/1
+                                    puts "999".to_c           999+0i
+6.Strings:
+   some of the most used methods  upcase,downcase,reverse,length.
+      ex: text="Hello Guys"                    
+          puts "upcase:"+text.upcase            o/p:upcase:HELLO GUYS
+          puts "downcase:"+text.downcase            downcase:hello guys
+          puts "Capitalize:"+text.capitalize        Capitalize:Hello guys 
+          puts "reverse:"+text.reverse              reverse:syuG olleH 
+          puts "length:#{text.length}"              length:10 
+          puts text.length                          10
+Multiline String: can be used in two ways 1.puts %/string/    2. puts <<any string and should close with same string any string.
+             1.ex:puts %/                                           2.ex: puts <<String
+                  IN howw     o/p:IN howw                                 IN howw                  o/p:IN howw
+                  many            many                                    many                         many 
+                  time_select     time_select                             time_select                  time_select
+                  String/         String                                  String
+7. string_methods with bang:(!)
+    .If we use ! the original text is changed
+    
