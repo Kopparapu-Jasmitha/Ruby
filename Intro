@@ -70,7 +70,68 @@ Multiline String: can be used in two ways 1.puts %/string/    2. puts <<any stri
 .gsub-replaces the value any where present in the string    puts string.gsub('e','i')   o/p: hillo mini
 .sub-replaces the only first value in the string   puts string.sub('e','i')     o/p: hillo mine
 9.Assignment operators: +=,-=,*=,/=
-  ex: a=100
-      b=10         o/p:110
-      puts a+=b        
-   
+  ex: a=100                       a=100
+      b=10         o/p:110        b=10        o/p:90
+      puts a+=b                   puts a-=b
+10.math methods: a=-9.1,b=576.2
+ abs-> make the number to positive   puts a.abs()   o/P:9.1
+round->round off value   puts a.round()  o/p:-9
+floor->round down of a value  ex:puts b.floor()  o/p:576
+ceil-> round up of a value    ex:puts b.ceil()   o/p: 577
+sqrt-> root value             ex:puts Math.sqrt(4)  o/p:2
+log->log value                ex: puts Math.log(4)  o/p:1.3862
+
+11.User Input
+gets->takes the input and goes to nextline
+gets.chomp-> only takes input
+    ex: puts "what's ur name?"               o/P:what's ur name?
+        name= gets                               Tinku
+        puts "hello #{name},how are u"           hello Tinku
+                                                ,how are you
+    ex: puts "what's ur name?"
+        name=gets.chomp                      o/P:what's ur name? 
+        puts "hello #{name},how are u"           Tinku
+                                                 hello Tinku,how are u
+11.user input example:
+      puts "enter a value"
+      a=gets.chomp
+      puts "enter b value"
+      b=gets.chomp
+      puts a + b     o/p: 4+5=45 # because it takes this as a striing and gives ouput
+      puts a.to_i + b.to_i   o/P:9 converted to integer
+12.comparision operator: >,<,>=,<=,==,!=
+     ex: a=100          puts a>b o/p:true
+         b=10           puts a<=c o/P:false
+         c=10
+13.Boolean operators: ==,&&,||,!
+      ex: or_test=(1!=1)||true
+          puts or_test            o/P:true
+14.arrays:we define in two ways
+    . via class->'Array.new'
+    . literal array ->'[10,9,8,7]
+    . array can have mixed data types ex:array_1=[0,1.0,"two",false]
+     ex: array_2=Array.new(2,"subscribe")   O/P:subscribe
+         puts array_2                           subscribe
+         puts array_1.size                      4
+         puts array_2.length                    2
+         puts "range"                           range
+         puts array_1[1,2] (start index,no.of ele)  1.0                     puts array_1[1...3]   (start index, final index excluding)       1.0
+                                                    two                                                                                      two
+         puts array_1[1..3] (two dots start index, end_index includes)    1.0
+                                                                          two
+                                                                          false
+15.n-dimensional array: grid=[[1,2,3],[4,5,6],[7,8,9]]
+                        puts grid[0][1]  o/p:2
+                        puts grid[2][1]      8
+                        grid[0][0]=100
+                        puts grid[0][0]      100
+16.array-methods:ex: lang=["kotlin","js","java"]           puts lang.pop    (returns and removes last element) 
+                     lang.push("ruby)          o/p:kotlin              o/p: Ruby
+                     puts lang                     js
+                                                   java
+                                                   ruby
+                     puts lang.reverse    o/p: java         puts lang.sort  o/p:java
+                                               js                               js
+                                               kotlin                           kotlin
+                      puts lang.include?("python")   o/p: false
+                      puts lang.include?("java")          true
